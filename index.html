@@ -29,145 +29,57 @@ src="https://www.facebook.com/tr?id=920318163969014&ev=PageView&noscript=1"/>
 <!-- END PIXEL -->
 
 <style>
-/* (TERA SAME CSS — KUCH CHANGE NAHI KIYA) */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body {background:#000;color:white;}
 
-body {
-  background: #000;
-  color: white;
-}
-
-/* BACKGROUND */
 .bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: url('https://cdn.phototourl.com/free/2026-04-13-d439bc98-8d11-4e34-ac06-22a14fb903f0.jpg') no-repeat center center/cover;
-  filter: blur(8px) brightness(0.4);
-  z-index: -2;
+position:fixed;width:100%;height:100%;
+background:url('https://cdn.phototourl.com/free/2026-04-13-d439bc98-8d11-4e34-ac06-22a14fb903f0.jpg') no-repeat center/cover;
+filter:blur(8px) brightness(0.4);z-index:-2;
 }
+.overlay {position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:-1;}
 
-/* OVERLAY */
-.overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-  z-index: -1;
-}
-
-/* TOP BAR */
 .topbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
+position:fixed;width:100%;top:0;padding:15px 20px;
+display:flex;justify-content:space-between;
+background:rgba(0,0,0,0.6);backdrop-filter:blur(10px);
 }
-
-.logo-text {
-  font-size: 18px;
-  font-weight: 700;
-}
+.logo-text {font-size:18px;font-weight:700;}
 
 .join-btn {
-  background: #0088cc;
-  padding: 10px 18px;
-  border-radius: 30px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
+background:#0088cc;padding:10px 18px;border-radius:30px;
+text-decoration:none;color:white;transition:0.3s;
 }
+.join-btn:hover {background:#00aaff;transform:scale(1.05);}
 
-.join-btn:hover {
-  background: #00aaff;
-  transform: scale(1.05);
-}
-
-/* HERO */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 80px;
+min-height:100vh;display:flex;justify-content:center;align-items:center;padding-top:80px;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
-  padding: 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 0 40px rgba(0,0,0,0.8);
-  max-width: 420px;
-  width: 90%;
-  text-align: center;
+background:rgba(255,255,255,0.05);padding:40px;border-radius:20px;
+backdrop-filter:blur(15px);box-shadow:0 0 40px rgba(0,0,0,0.8);
+max-width:420px;width:90%;text-align:center;
 }
 
-/* BIG LOGO */
 .logo-img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 25px rgba(0,136,204,0.8);
+width:120px;height:120px;object-fit:cover;border-radius:20px;
+margin-bottom:20px;box-shadow:0 0 25px rgba(0,136,204,0.8);
 }
 
-/* TEXT */
-h1 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
+h1 {font-size:26px;margin-bottom:10px;}
+p {font-size:14px;color:#ccc;margin-bottom:25px;}
 
-p {
-  font-size: 14px;
-  color: #ccc;
-  margin-bottom: 25px;
-}
-
-/* BUTTON */
 .main-btn {
-  display: inline-block;
-  padding: 14px 28px;
-  background: #0088cc;
-  border-radius: 50px;
-  text-decoration: none;
-  color: white;
-  transition: 0.3s;
+display:inline-block;padding:14px 28px;background:#0088cc;
+border-radius:50px;text-decoration:none;color:white;transition:0.3s;
 }
+.main-btn:hover {background:#00aaff;transform:scale(1.08);}
 
-.main-btn:hover {
-  background: #00aaff;
-  transform: scale(1.08);
-}
+.features {margin-top:20px;text-align:left;}
+.features li {margin:8px 0;font-size:14px;}
 
-/* FEATURES */
-.features {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.features li {
-  margin: 8px 0;
-  font-size: 14px;
-}
-
-/* FOOTER */
-.footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 12px;
-  color: #aaa;
-}
+.footer {text-align:center;padding:15px;font-size:12px;color:#aaa;}
 </style>
 </head>
 
@@ -179,9 +91,7 @@ p {
 <!-- TOP BAR -->
 <div class="topbar">
   <div class="logo-text">𝐃𝐈𝐌𝐈 𝐍𝐔𝐌𝐁𝐄𝐑 𝐒𝐔𝐑𝐄 𝐒𝐇𝐎𝐓</div>
-  <a href="https://t.me/+OUODd3l_hhYyZDY1" target="_blank" 
-     class="join-btn"
-     onclick="fbq('track', 'Subscribe');">Join</a>
+  <a href="#" class="join-btn" onclick="trackAndRedirect(event)">Join</a>
 </div>
 
 <!-- MAIN -->
@@ -193,9 +103,7 @@ p {
     <h1>𝐃𝐈𝐌𝐈 𝐍𝐔𝐌𝐄𝐁𝐄𝐑 𝐒𝐔𝐑𝐄 𝐒𝐇𝐎𝐓</h1>
     <p>Daily earning tips, premium updates & fast signals directly on Telegram.</p>
 
-    <a href="https://t.me/+OUODd3l_hhYyZDY1" target="_blank" 
-       class="main-btn"
-       onclick="fbq('track', 'Subscribe');">
+    <a href="#" class="main-btn" onclick="trackAndRedirect(event)">
       🚀 Join Telegram Channel
     </a>
 
@@ -212,6 +120,21 @@ p {
 <div class="footer">
   © 2026 𝐃𝐈𝐌𝐈 𝐍𝐔𝐌𝐁𝐄𝐑 𝐒𝐔𝐑𝐄 𝐒𝐇𝐎𝐓
 </div>
+
+<!-- ✅ TRACKING SCRIPT (FIXED) -->
+<script>
+function trackAndRedirect(e) {
+  e.preventDefault();
+
+  // Pixel event fire (strong tracking)
+  fbq('track', 'Subscribe', {}, {eventID: Date.now()});
+
+  // delay + redirect
+  setTimeout(function() {
+    window.open("https://t.me/+OUODd3l_hhYyZDY1", "_blank");
+  }, 400);
+}
+</script>
 
 </body>
 </html>
